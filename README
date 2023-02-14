@@ -1,0 +1,6 @@
+# Viva Lang
+
+Viva is a object oriented programming language that is transpiled to c with the aim to be robust and simple.
+
+> Currently only the parser and lexer are implemented.
+

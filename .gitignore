@@ -3,4 +3,9 @@
 build/
 bin/
 
+# VSCode
+.metals/
+.vscode/
+
 .0/
+
