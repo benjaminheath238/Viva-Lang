@@ -1,0 +1,29 @@
+plugins {
+    id('java')
+}
+
+group = 'viva'
+version = '1.0.0'
+
+repositories {
+    mavenCentral()
+    mavenLocal()
+}
+
+dependencies {
+    compileOnly('org.projectlombok:lombok:1.18.24')
+	annotationProcessor('org.projectlombok:lombok:1.18.24')
+	
+	testCompileOnly('org.projectlombok:lombok:1.18.24')
+	testAnnotationProcessor('org.projectlombok:lombok:1.18.24')
+
+    implementation('org.antlr:antlr4-runtime:4.9.2')
+}
+
+tasks.named('jar') {
+    manifest {
+        attributes (
+            'Main-Class': "${project.group}.Main"
+        )
+    }
+}

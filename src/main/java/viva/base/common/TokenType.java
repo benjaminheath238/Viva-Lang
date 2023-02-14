@@ -1,0 +1,39 @@
+package viva.base.common;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+
+@AllArgsConstructor
+@Getter
+public enum TokenType {
+    LBRACE, RBRACE,
+    LPAREN, RPAREN,
+    LBRACK, RBRACK,
+        
+    DOT, COLON, SEMI, COMMA,
+
+    IDENTIFIER,
+
+    PROC, CLASS, STRUCT,
+
+    LET,
+
+    RETURN, CONTINUE, BREAK,
+        
+    WHILE, UNTIL, DO,
+        
+    IF, ELIF, ELSE,
+
+    INTEGER_LITERAL, FLOAT_LITERAL,
+    BOOLEAN_LITERAL,
+    CHARACTER_LITERAL, STRING_LITERAL,
+
+    ASSIGN, WIDE_ARROW, THIN_ARROW,
+
+    EQUAL, NOT_EQUAL, LESS_THAN, MORE_THAN, LESS_THAN_EQUAL, MORE_THAN_EQUAL,
+
+    ADD, SUB, MUL, DIV,
+        
+    LOGICAL_NOT, LOGICAL_AND, LOGICAL_XOR, LOGICAL_OR,
+    BITWISE_NOT, BITWISE_AND, BITWISE_XOR, BITWISE_OR;
+}
